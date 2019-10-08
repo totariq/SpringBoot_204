@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#"
+      th:object="${tvshow}"
+      method="post">
+    Id:<input type="number" th:field="*{id}" />
+    <span th:if="${#fields.hasErrors("id"}"
+    th:errors="*{id}"><</span>
+
+</form>
+</body>
+</html>
