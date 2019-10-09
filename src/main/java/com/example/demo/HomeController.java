@@ -17,8 +17,8 @@ public class HomeController {
     }
 
     @PostMapping("/tvform")
-    public String processTvForm(@Valid Tvshow tvshow,
-                                BindingResult result){
+    public String processTvForm(@Valid Tvshow tvshow, BindingResult result)
+    {
         if (result.hasErrors()) {
             return "tvform";
         }
